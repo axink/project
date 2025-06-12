@@ -13,7 +13,7 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
 
-    @include('layouts.nav')
+    @include('layouts.navbar')
 
     <main class="container mx-auto py-6">
         @yield('content')

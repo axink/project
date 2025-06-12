@@ -1,4 +1,3 @@
-
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 <nav class="bg-gradient-to-r from-blue-200 via-blue-100 to-blue-50 shadow-md">
@@ -21,10 +20,10 @@
   
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
           <div class="hidden sm:ml-8 sm:flex sm:space-x-6">
-            <a  href="{{route ('home')}}" class="rounded-lg bg-blue-300 px-4 py-2 text-sm font-semibold text-blue-900 shadow-sm hover:bg-blue-400 transition">home</a>
-            <a href=" {{ route ('pregnancystage') }}" class="rounded-lg px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">PregnancyStage</a>
-            <a href="#" class="rounded-lg px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">babyNames</a>
-            <a href=" {{ route ('mother-notes') }}" class="rounded-lg px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">note</a>
+            <a  href="{{route ('home')}}" class="rounded-lg bg-blue-300 px-4 py-2 text-sm font-semibold text-blue-900 shadow-sm hover:bg-blue-400 transition">دەستپێک</a>
+            <a href=" {{ route ('pregnancystage') }}" class="rounded-lg px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">گەشتا دۆگیانیێ</a>
+            <a href=" {{ route ('babynames') }}"class="rounded-lg px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">ناڤێن زارۆکان </a>
+            <a href=" {{ route ('mother-notes') }}" class="rounded-lg px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">نڤیسینا تێبینیان</a>
           </div>
         </div>
       </div>
@@ -32,7 +31,7 @@
   
     <!-- Mobile menu -->
     <div class="sm:hidden px-4 pt-4 pb-3 space-y-1 bg-blue-50">
-      <a  href="#" class="block rounded-lg bg-blue-300 px-4 py-2 text-base font-semibold text-blue-900 shadow-sm hover:bg-blue-400 transition">home</a>
+      <a href="#" class="block rounded-lg bg-blue-300 px-4 py-2 text-base font-semibold text-blue-900 shadow-sm hover:bg-blue-400 transition">home</a>
       <a href="#" class="block rounded-lg px-4 py-2 text-base font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">PregnancyStage</a>
       <a href="#" class="block rounded-lg px-4 py-2 text-base font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">checklist</a>
       <a href="#" class="block rounded-lg px-4 py-2 text-base font-medium text-blue-700 hover:bg-blue-200 hover:text-blue-900 transition">note</a>

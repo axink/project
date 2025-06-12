@@ -1,59 +1,13 @@
-{{-- <!-- resources/views/mother-notes.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     @include('layouts.navbar')
-
-    <meta charset="UTF-8">
-    <title>Mother Notes</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-pink-50">
-
-    <section class="py-16 min-h-screen flex items-center justify-center">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-xl">
-            <h1 class="text-3xl font-bold text-center text-pink-700 mb-4">📝 Mother's Notes</h1>
-            <p class="text-center text-gray-600 mb-6">Write anything you want to remember. Your note will stay in this browser.</p>
-
-            <textarea id="note" class="w-full h-64 p-4 rounded-lg border border-gray-300 shadow resize-none" placeholder="Start typing..."></textarea>
-
-            <div class="mt-4 flex justify-center gap-4">
-                <button onclick="saveNote()" class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700">💾 Save</button>
-                <button onclick="clearNote()" class="bg-gray-200 text-gray-800 px-6 py-2 rounded hover:bg-gray-300">🗑️ Clear</button>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Load note if exists
-        document.getElementById('note').value = localStorage.getItem('motherNote') || '';
-
-        function saveNote() {
-            const note = document.getElementById('note').value;
-            localStorage.setItem('motherNote', note);
-            alert("Note saved in this browser 💾");
-        }
-
-        function clearNote() {
-            document.getElementById('note').value = '';
-            localStorage.removeItem('motherNote');
-        }
-    </script>
-    @include('layouts.footer')
-
-</body>
-</html> --}}
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mother's Journal | Pregnancy Notes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -69,7 +23,6 @@
     </style>
 </head>
 <body class="bg-gradient-to-b from-pink-50 to-rose-50 min-h-screen flex flex-col">
-    @include('layouts.navbar')
 
     <main class="flex-grow py-12 px-4">
         <div class="max-w-4xl mx-auto">
