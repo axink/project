@@ -126,7 +126,7 @@
 <section class="py-16 bg-rose-50" id="main">
     <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 text-rose-800 font-[cursive]">👶 پێشکەشکراوەکانی ئێمە بۆ دایکان 👶</h2>
-        
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
 
@@ -257,9 +257,9 @@
         </button>
     </div>
 </div>
-        
 
-       
+
+
         </div>
     </div>
 </section>
@@ -273,7 +273,7 @@
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-bold text-gray-800">
                 دگەل مە ساخلەم بە 💕
-            </h2>    
+            </h2>
         </div>
     </section>
 
