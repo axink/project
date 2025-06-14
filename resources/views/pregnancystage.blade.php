@@ -280,14 +280,15 @@
                             <img src="https://cdn-icons-png.flaticon.com/512/3106/3106880.png" alt="Monitoring Icon"
                                 class="w-12">
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-cyan-900">مۆنیتۆرکردنا دڵ و تەنەفس</h3>
+                        <h3 class="text-xl font-bold mb-3 text-cyan-900">مۆنیتۆرکردنا دڵ  </h3>
                         <p class="text-gray-600 mb-5 text-sm leading-relaxed">
-                            <!-- #region --> ،چاڤدێریا دڵی زارۆک وتەنەفس گرنگە بۆ ئەمنی و ساخلەمیا وان
+                            <!-- #region --> ،چاڤدێریا دڵی زارۆک  گرنگە بۆ ئەمنی و ساخلەمیا وان
                         </p>
-                        <button
+                        <a href="{{ route('pregnancy-components.monitorheart') }}"
+
                             class="bg-gradient-to-r from-green-300 v to-green-400 text-white px-5 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all">
                             پتر بزانە 💓
-                        </button>
+                        </a>
                     </div>
                 </div>
 

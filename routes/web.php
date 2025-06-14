@@ -46,3 +46,7 @@ Route::get('/vitamins', function () {
 Route::get('/weeks', function () {
     return view('pregnancy-components.weeks');
 })->name('pregnancy-components.weeks');
+
+Route::get('/monitorheart', function () {
+    return view('pregnancy-components.monitorheart');
+})->name('pregnancy-components.monitorheart');

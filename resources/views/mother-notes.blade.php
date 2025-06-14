@@ -9,15 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
     
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
         .title-font {
             font-family: 'Playfair Display', serif;
         }
         .note-textarea {
             background-image: linear-gradient(#f8fafc 1px, transparent 1px);
-            background-size: 100% 28px;
+            /* background-size: 100% 28px; */
             line-height: 28px;
         }
     </style>
@@ -28,9 +25,10 @@
         <div class="max-w-4xl mx-auto">
             <!-- Header Section -->
             <div class="text-center mb-10">
-                <h1 class="title-font text-4xl font-bold text-rose-700 mb-3">🌸 Mother's Journal</h1>
+                <h1 class="title-font text-4xl font-bold text-rose-700 mb-3">🌸 گەشتا دایکێ</h1>
                 <p class="text-lg text-rose-600 max-w-2xl mx-auto">
-                    Your personal pregnancy diary and notes - saved automatically as you type
+                   
+                   
                 </p>
             </div>
 
@@ -56,18 +54,20 @@
                         </button>
                     </div>
                     <div class="text-sm text-rose-500" id="lastSaved">
-                        Not saved yet
+                            هێشتا نەهاتییە save کرن
                     </div>
                 </div>
                 
                 <!-- Text Area -->
                 <textarea id="note" class="note-textarea w-full h-96 p-6 text-gray-700 focus:outline-none resize-none"
-                    placeholder="Write your thoughts, feelings, questions, or anything you want to remember during this special journey..."></textarea>
+                    placeholder="
+                    ......هەستێت خۆ ، رۆژانێت خۆ،پسیارێت خۆ ، هەر تشتێ تە بڤێت بنڤیسە
+                    "></textarea>
                 
                 <!-- Footer Actions -->
                 <div class="bg-rose-50 px-6 py-4 border-t border-rose-100 flex justify-between items-center">
                     <div class="text-sm text-rose-600">
-                        <span id="wordCount">0</span> words | <span id="charCount">0</span> characters
+                        <span id="wordCount">0</span> پەیڤ | <span id="charCount">0</span> پیت
                     </div>
                     <div class="flex space-x-3">
                         <button onclick="exportNote()" class="flex items-center px-4 py-2 bg-white text-rose-600 border border-rose-200 rounded-lg hover:bg-rose-50 transition">
@@ -80,7 +80,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                             </svg>
-                            Clear
+                            پاقژکرن
                         </button>
                     </div>
                 </div>

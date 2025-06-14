@@ -1,136 +1,347 @@
 @extends('layouts.app')
+
 @section('content')
 <div class="max-w-5xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-center mb-6">👶 Baby Names</h1>
-
-    <!-- Search Bar -->
-    <div class="mb-6">
-        <input type="text" id="searchInput" placeholder="Search name or meaning..." 
-               class="w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300">
+    <!-- Header with animated baby icon -->
+    <div class="text-center mb-10 animate__animated animate__fadeIn">
+        <div class="inline-block bg-pink-100 p-4 rounded-full shadow-lg mb-4">
+            <span class="text-4xl">👶</span>
+        </div>
+        <h1 class=" text-2xl text-gray-500 mt-2">هەڵبژارتنا ناڤەکێ تایبەت ۆ کۆردی بۆ زارۆکێ تە </h1>
     </div>
 
+ 
+
     <!-- Girl Names Section -->
-    <div class="mb-8">
-        <h2 class="text-2xl font-bold text-pink-600 mb-4">👧 Girl Names</h2>
-        <div id="girlNamesContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Ava</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Life</span></p>
+    <div class="mb-12 bg-pink-50 rounded-2xl p-6 shadow-inner">
+        <div class="flex items-center mb-6">
+            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                <span class="text-xl text-pink-600">👧</span>
             </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Mia</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Mine; beloved</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Zara</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Princess; flower</span></p>
-            </div>
-
-
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Emma</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Whole; universal</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Sophia</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Wisdom</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Isabella</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">God is my oath</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Luna</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Moon</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Ella</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Fairy maiden</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-pink-600">Aria</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Girl</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Air; melody</span></p>
+            <h2 class="text-2xl font-bold text-pink-600">ناڤێن کچان</h2>
+        </div>
+        
+        <div id="girlNamesContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- Kurdish Girl Names -->
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌸</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">ئارین</h3>
             </div>
             
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌺</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">ڤیان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌷</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">لینا</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">💐</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">سارا</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌼</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">یارا</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🏵️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">نارین</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌹</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">روژان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">💮</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">هێڤی</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🦋</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">دلان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🧚</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">پریا</h3>
+            </div>
+
+            <!-- More Kurdish Girl Names -->
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌙</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">هێلین</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">✨</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">شیلان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🏵️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">گولان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌺</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">ژیان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌸</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">ژینان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌷</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">سارینا</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">💐</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">دلڤین</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌼</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">ئالین</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌹</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">شرین</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🦋</span>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700">پەری</h3>
+            </div>
         </div>
     </div>
 
     <!-- Boy Names Section -->
-    <div class="mb-8">
-        <h2 class="text-2xl font-bold text-blue-600 mb-4">👦 Boy Names</h2>
-        <div id="boyNamesContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Liam</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Strong-willed warrior</span></p>
+    <div class="mb-12 bg-blue-50 rounded-2xl p-6 shadow-inner">
+        <div class="flex items-center mb-6">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <span class="text-xl text-blue-600">👦</span>
             </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Noah</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Rest; comfort</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Ethan</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Strong; firm</span></p>
-            </div>
-
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">James</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Supplanter</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Oliver</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Olive tree</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Lucas</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Bringer of light</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Henry</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Ruler of the home</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Leo</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Lion</span></p>
-            </div>
-            <div class="baby-card bg-white p-5 rounded-2xl shadow hover:shadow-md transition-all">
-                <h2 class="text-xl font-semibold text-blue-600">Benjamin</h2>
-                <p class="text-sm text-gray-500">Gender: <span class="font-medium">Boy</span></p>
-                <p class="mt-1 text-gray-600">Meaning: <span class="italic">Son of the right hand</span></p>
+            <h2 class="text-2xl font-bold text-blue-600">ناڤێن کۆران</h2>
+        </div>
+        
+        <div id="boyNamesContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- Kurdish Boy Names -->
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">⚔️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">کارزان</h3>
             </div>
             
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🦁</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">شێرکۆ</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌄</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">هێمن</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌠</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">ڕۆستەم</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">⚡</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">زیاد</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🛡️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">سەربەست</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌊</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">ئادەم</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌌</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">ڕابوون</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌳</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">دارا</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🏹</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">دیرزان</h3>
+            </div>
+
+            <!-- More Kurdish Boy Names -->
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🗡️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">دلۆڤان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🏔️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">کەمال</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌅</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">روونی</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">⚓</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">دڵشاد</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🦅</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">شەهێن</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌠</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">ستار</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">⚔️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">مەردان</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🏹</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">نەوزاد</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🛡️</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">ئازاد</h3>
+            </div>
+            
+            <div class="baby-card bg-white p-4 rounded-xl shadow hover:shadow-md transition-all text-center">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl">🌋</span>
+                </div>
+                <h3 class="text-lg font-semibold text-blue-700">کاوە</h3>
+            </div>
         </div>
     </div>
-</div>
+
+   
 
 <!-- Search Script -->
 <script>
-    const searchInput = document.getElementById('searchInput');
-    const babyCards = document.querySelectorAll('.baby-card');
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const babyCards = document.querySelectorAll('.baby-card');
 
-    searchInput.addEventListener('input', function () {
-        const keyword = this.value.toLowerCase();
-
-        babyCards.forEach(card => {
-            const text = card.textContent.toLowerCase();
-            card.style.display = text.includes(keyword) ? '' : 'none';
+        searchInput.addEventListener('input', function() {
+            const keyword = this.value.toLowerCase();
+            
+            babyCards.forEach(card => {
+                const name = card.querySelector('h3').textContent.toLowerCase();
+                card.style.display = name.includes(keyword) ? '' : 'none';
+            });
         });
     });
 </script>
+
+<style>
+    .baby-card:hover {
+        transform: translateY(-3px);
+    }
+</style>
 @endsection
