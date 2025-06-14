@@ -91,7 +91,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ماڵپەڕی حەمڵەیی</title>
+    <title> دەستپێک</title>
 
     <!-- Include Tailwind CSS and Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -151,12 +151,14 @@
                     <p class="text-xl md:text-2xl text-gray-700 mb-8 animate__animated animate__fadeInUp animate__delay-2s">
                         زانیاریێن پێدڤی و ڕێنمایێن گرنگ بۆ چاڤدێری گەشەکرنا زارۆکێ تە   
                     </p>
-                    <button class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp animate__delay-3s">
+                    <a href="{{ route('pregnancystage') }}">
+                    <button  class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp animate__delay-3s">
                         دەستپێکردن
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline mr-1" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -200,12 +202,7 @@
                     <p class="text-sm text-gray-600 text-center">
                         زانیاری دەربارەی هەر سێ قۆناغی حەمڵەیی و چۆن چاودێری خۆت و منداڵەکەت بکەیت
                     </p>
-                    <a href="#" class="block text-center mt-4 text-blue-600 hover:text-blue-800 text-sm font-medium">
-                        بینینی زیاتر
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
+                  
                 </div>
                 
                 <!-- Baby Names -->
@@ -219,12 +216,7 @@
                     <p class="text-sm text-gray-600 text-center">
                         ناوە جوانەکان بۆ کور و کچ بە مانای خۆیان و هەڵبژاردنی ناوی گونجاو
                     </p>
-                    <a href="#" class="block text-center mt-4 text-pink-600 hover:text-pink-800 text-sm font-medium">
-                        بینینی زیاتر
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
+                 
                 </div>
                 
                 <!-- Health Tips -->
@@ -238,12 +230,7 @@
                     <p class="text-sm text-gray-600 text-center">
                         چی بخۆیت بۆ پاراستنی تەندروستی خۆت و منداڵەکەت لە ماوەی حەمڵەییدا
                     </p>
-                    <a href="#" class="block text-center mt-4 text-yellow-600 hover:text-yellow-800 text-sm font-medium">
-                        بینینی زیاتر
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
+                  
                 </div>
             </div>
         </div>
@@ -278,12 +265,7 @@
                             <span>ئاگادارکردنەوە لە کاتی نائاسایی بوونی نرخی دڵ</span>
                         </li>
                     </ul>
-                    <button class="mt-8 bg-white text-pink-600 hover:bg-pink-50 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                        پشکنینی دڵ
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
+              
                 </div>
                 <div class="md:w-1/2 animate__animated animate__fadeInRight">
                     <img src="https://cdn-icons-png.flaticon.com/512/4359/4359975.png" alt="Heart Monitor" class="w-64 h-64 mx-auto heartbeat">
