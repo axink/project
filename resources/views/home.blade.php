@@ -189,7 +189,7 @@
     <!-- Topics Section -->
     <section class="bg-white text-gray-800 py-16">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center animate__animated animate__fadeIn">بابەتی یارمەتیدەر</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center animate__animated animate__fadeIn">بابەتێن هاریکار</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Pregnancy Stages -->
                 <div class="bg-blue-50 rounded-2xl p-6 shadow-lg card-hover animate__animated animate__fadeInUp animate__delay-1s">
@@ -198,9 +198,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-center">قۆناغەکانی حەمڵەیی</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-center">قۆناغێت دۆگیانیێ</h3>
                     <p class="text-sm text-gray-600 text-center">
-                        زانیاری دەربارەی هەر سێ قۆناغی حەمڵەیی و چۆن چاودێری خۆت و منداڵەکەت بکەیت
+                        زانیاری دەربارەی هەر سێ قۆناغێت دۆگیانیێ و چاوا چاڤدێریا خۆ و زارۆکێ خۆ کەی
                     </p>
                   
                 </div>
@@ -212,9 +212,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-center">ناوی منداڵان</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-center">ناڤێت زارۆکان</h3>
                     <p class="text-sm text-gray-600 text-center">
-                        ناوە جوانەکان بۆ کور و کچ بە مانای خۆیان و هەڵبژاردنی ناوی گونجاو
+                         ناڤێت جوان بۆ کور و کچ  و هەڵبژارتنا ناڤەکێ گونجای  
                     </p>
                  
                 </div>
@@ -226,9 +226,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-center">ڕێنمایی تەندروستی</h3>
+                    <h3 class="text-xl font-semibold mb-3 text-center">ڕێنمایێن تەندروستی</h3>
                     <p class="text-sm text-gray-600 text-center">
-                        چی بخۆیت بۆ پاراستنی تەندروستی خۆت و منداڵەکەت لە ماوەی حەمڵەییدا
+                        چ بخۆی بۆ پاراستنا تەندروستیا خۆ و زارۆکێ خۆ د ماوەیێ دۆگیانیێ
                     </p>
                   
                 </div>
@@ -241,29 +241,29 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 animate__animated animate__fadeInLeft">
-                    <h2 class="text-3xl font-bold mb-4">چاودێری دڵی منداڵەکەت</h2>
+                    <h2 class="text-3xl font-bold mb-4">چاڤدێریا دڵێ زارۆکی</h2>
                     <p class="text-lg mb-6">
-                        پشکنینی نرخی دڵی منداڵ لە ناو سکدا بە یارمەتی تەکنەلۆژیای مۆدێرن
+                        پشکنینا  دلێ زارۆکی د ناڤ زکێ دایکێ دا ب هاریکاریا تەکنەلۆژیا مۆدێرن
                     </p>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-600 mt-1 mr-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
-                            <span>پشکنینی نرخی دڵ لە هەفتەی ٦ی حەمڵەییەوە</span>
+                            <span>پشکنینا دڵی د حەفتیا ٦ دا </span>
                         </li>
                         <li class="flex items-start">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-600 mt-1 mr-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
-                            <span>نیشاندانی گۆڕانکارییەکانی نرخی دڵ بە شێوەی گرافیک</span>
+                            <span>نیشاندانا گۆڕانکاریێت  دڵی ب شێوەیێ گرافیک</span>
                         </li>
-                        <li class="flex items-start">
+                        {{-- <li class="flex items-start">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-600 mt-1 mr-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             <span>ئاگادارکردنەوە لە کاتی نائاسایی بوونی نرخی دڵ</span>
-                        </li>
+                        </li> --}}
                     </ul>
               
                 </div>
