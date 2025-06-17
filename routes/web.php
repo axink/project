@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PregnancyStageController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\pregController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/pregnancystage', [PregnancyStageController::class, 'index'])->name('pregnancystage');
@@ -43,9 +43,7 @@ Route::get('/vitamins', function () {
     return view('pregnancy-components.vitamin');
 })->name('pregnancy-components.vitamins');
 
-Route::get('/weeks', function () {
-    return view('pregnancy-components.weeks');
-})->name('pregnancy-components.weeks');
+Route::get('/weeks', [pregController::class, 'weeks'])->name('pregnancy-components.weeks');
 
 Route::get('/monitorheart', function () {
     return view('pregnancy-components.monitorheart');
