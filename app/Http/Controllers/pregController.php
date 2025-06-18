@@ -11,200 +11,201 @@ class pregController extends Controller
     {
         $weeksInfo = [
             [
-                'num' => '3 weeks: Implantation',
-                'description' => 'Now nestled in the nutrient-rich lining of your uterus is a microscopic ball of hundreds of rapidly multiplying cells that will develop into your baby. This ball of cells, called a blastocyst, has begun to produce the pregnancy hormone hCG, which tells your ovaries to stop releasing eggs.',
+                'num' => '3 حەفتیا',
+                'description' => ' زارۆکێ تە نوکە وەک تەپەکا بچەووکە بلەز خانێت وی دابەشدبن ل داهاتی دێ بیتە زارۆک،  ئەڤ تەپە  ناڤێ وی (بلاستۆسست)  و دەستپێدکت ب دروستکرنا هۆرمۆنێ (hcg) ناهێلیت تۆخمێن نی بهین' ,
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-3-blastocycst_4x3.jpg?width=702'
             ],
             [
-                'num' => '4 weeks',
-                'description' => 'Your ball of cells is now officially an embryo. You are now about 4 weeks from the beginning of your last period. It is around this time – when your next period would normally be due – that you might be able to get a positive result on a home pregnancy test.',
+                'num' => '4 حەفتیا',
+                'description' => 'نوکە تۆپا ژ گەلەک خانەیان پێکهاتی بوویە کۆرپەلە. تۆ نوکە نێزیکی 4 حەفتیا  تۆ دووگیانی. دڤی وەختیدا - چێدبت بشێی ئەنجامێ ئەرێنی د تاقیکردنا دووگیانیا مالێ بینی .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-4-yolk-sac_4x3.jpg?width=702'
             ],
             [
-                'num' => '5 weeks',
-                'description' => 'Your baby resembles a tadpole more than a human, but is growing fast. The circulatory system is beginning to form, and cells in the tiny "heart" will start to flicker this week.',
+                'num' => '5 حەفتیا',
+                'description' => 'زارۆکێ تە دڤان حەفتیاندا شێوێ مرۆڤا نادت، بەس ب لەز گەشێ دکەت. سیستەمێ خۆینێ  دەست ب پەرەسەندێ دکەت و خانێت "دلی"  ڤێ حەفتیێ دەست ب لەرزینێ دکەت.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-5-amniotic-sac_4x3.jpg?width=702'
             ],
             [
-                'num' => '6 weeks',
-                'description' => 'Your baby is nose, mouth and ears are starting to take shape, and their intestines and brain are beginning to develop. Your baby is the size of a lentil.',
+                'num' => '6 حەفتیا',
+                'description' => 'دفن و دەڤ و گۆهێن زارۆکی دەست ب درووستکرنا خۆ دکەن و ریڤیک و مێشک دەست ب گەشەکرنێ دکەن. زاروکێ تە ب قەبارەیێ نیسکەکێ یە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-6-webbed-hands_4x3.jpg?width=702'
             ],
             [
-                'num' => '7 weeks',
-                'description' => 'Your baby has doubled in size since last week, but still has a tail, which will soon disappear. Little hands and feet that look more like paddles are emerging from the developing arms and legs.',
+                'num' => '7 حەفتیا', 
+                 'description' => 'زارۆک ب بەراورد دگەل حەفتیا چوی  قەبارەیێ وی دوو هێندە زێدەبوویە ، دەست و پێی وی شنی ژ مل و پێت وی دەردکەڤن ۆ گەشێ دکن .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-7-tailbone_4x3.jpg?width=702'
             ],
             [
-                'num' => '8 weeks',
-                'description' => 'Your baby has started moving around, though you will not feel your baby move yet. Nerve cells are branching out, forming primitive neural pathways. Breathing tubes now extend from their throat to their developing lungs. Your baby is the size of a kidney bean.',
+                'num' => '8 حەفتیا',
+                'description' => 'زارۆک دەست ب لڤینێ دکەت، هەرچەندە هێشتا هەست بە لڤینا وی ناکەی. خانەیێت دەماری دەست بە  پێکهێنان لقان دکەن،  دەمارێن سەرەتایی دروست دکەن. لولەیێن هەناسەدانێ نوکە لە حەفکێ بۆ سیهان درێژدبن.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-8-brain-nerve-cells_4x3.jpg?width=702'
             ],
             [
-                'num' => '9 weeks',
-                'description' => 'Your baby is basic anatomy is developing (they even have tiny earlobes now), but there is much more to come. Their embryonic tail has disappeared and they weigh just a fraction of an ounce but are about to start gaining weight fast. Your baby is the size of a grape.',
+                'num' => '9 حەفتیا', 
+                'description' => 'پێکهاتەیێن سەرەتایی زارۆکی گەشە دکەن (هەتا گوهێن بچووک هەیە)، بەس زۆر تشت  ماینە. لڤان نێزیکان دێ کێشا وی زێدەبیت، .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-9-finger-touch-pads.jpg?width=702'
             ],
             [
-                'num' => '10 weeks',
-                'description' => 'Your embryo has completed the most critical portion of development. Their skin is still translucent, but their tiny limbs can bend and fine details like nails are starting to form.',
+                'num' => '10 حەفتیا',
+                'description' => 'زارۆکی گرنگترین بەشێ گەشێ یێ تەمامکری. پێستێ وی هێشتا ڕووناهی ژێ دەربازدبیت  و نینۆک دەست ب پێکهاتنێ دکەن.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-10-fingernails_4x3.jpg?width=702'
             ],
             [
-                'num' => '11 weeks',
-                'description' => 'Your baby is almost fully formed. They are kicking, stretching, and even hiccupping as their diaphragm develops, although you can not feel any activity yet. Your baby is the size of a fig.',
+                'num' => '11 حەفتیا',
+                'description' => 'زارۆکی تە ب نێزیکی تەمام پێکهاتییە. ئەو دەست ب لێدانێ دکەن. هەرچەندە هێشتا نەشێی هەست ب هیچ چالاکییەکێ  بکەی. زارۆکێ تە ب قەبارەیا هژیرەکێ یە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-11-tooth-buds_4x3.jpg?width=702'
             ],
             [
-                'num' => '12 weeks',
-                'description' => 'This week your baby is reflexes kick in: Their fingers will soon begin to open and close, toes will curl, and their mouth will make sucking movements.Your baby is the size of a lime.',
+                'num' => '12 حەفتیا',
+                'description' => 'ل ڤێ حەفتیێ ڕەفتارێن سروشتی  دەست پێدکەن: تبلێن وان ل نێزیک دەست ب ڤەکرن و گرتنێ دکەن، و دەڤێ وان لینا مژینێ دروست دکەن  .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-12-eyelids_4x3.jpg?width=702'
             ],
             [
-                'num' => '13 weeks',
-                'description' => 'This is the last week of your first trimester. Your baby is tiny fingers now have fingerprints, and their veins and organs are clearly visible through their skin. If you are having a girl, her ovaries contain more than 2 million eggs.',
+                'num' => '13 حەفتیا',
+                'description' => 'ئەڤە دوماهیک حەفتیا سێ هەیڤێن دەستپێکێ یە. پەنجە بچووکەکانی منداڵەکەت ئێستا پەنجە نوسانیان هەیە. ئەگەر کچ بیت، هێلکەدانا وێ زێدەتر  ژ 2 ملیۆن هێلکان بخۆڤە دگریت.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-13-fingerprints_4x3.jpg?width=702'
             ],
             [
-                'num' => '14 weeks',
-                'description' => 'Your baby is brain impulses have begun to fire and they are using their facial muscles. Their kidneys are working now, too. If you have an ultrasound, you may even see them sucking their thumb.',
+                'num' => '14 حەفتیا',
+                 'description' => ' گولچیسک نۆکە کار دکەن  تبلێن خۆ دمێژن.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-14-face-muscles_4x3.jpg?width=702'
             ],
             [
-                'num' => '15 weeks',
-                'description' => 'Your baby is eyelids are still fused shut, but they can sense light. If you shine a flashlight on your tummy, they all move away from the beam. Ultrasounds done this week may reveal your baby is sex.',
+                'num' => '15 حەفتیا',    
+                'description' => 'چاڤێن زارۆکی دگرتیینە بەلێ دشێت هەست ب روناهیێ بکەت، دەستپێکا  ڤێ حەفتیێ چێدبیت ڕەگەزێ زارۆکی ئاشکرا ببیت.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-15-lung-development_4x3.jpg?width=702'
             ],
             [
-                'num' => '16 weeks',
-                'description' => 'The patterning on your baby is scalp has begun, though their hair is not visible yet. Their legs are more developed, their head is more upright, and their ears are close to their final position. Your baby is the size of an avocado.',
+                'num' => '16 حەفتیا',
+                'description' => 'شێوازی سەرێ  زارۆکی یا دەست پێکری،  هێشتا پرچا وان دیار نینە. پیێن وان زێدەتر گەشە کرییە، و گۆهێن وان ژی نزیکە بدوماهی بهێن. زارۆک ب قەبارەیێ ئەڤۆکادۆیەکێ یە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-16-heart-development_4x3.jpg?width=702'
             ],
             [
-                'num' => '17 weeks',
-                'description' => 'Your baby can move their joints, and their skeleton – formerly soft cartilage – is now hardening to bone. The umbilical cord is growing stronger and thicker. Your baby is the size of a turnip.',
+                'num' => '17 حەفتیا',
+                'description' => 'زارۆک دشێت بربرێن خۆ بلڤینیت ، و ئێسکە پەیکەرێن وی - بەری نوکە نەرم بوو - نوکە بۆ  ڕەق بوویە. .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-17-skeleton_4x3.jpg?width=702'
             ],
             [
-                'num' => '18 weeks',
-                'description' => 'Your baby is flexing their arms and legs, and you may be able to feel those movements. Internally, a protective coating of myelin is forming around their nerves. Your baby is the size of a bell pepper.',
+                'num' => '18 حەفتیا',
+                'description' => 'زارۆک مل ۆ پێت خۆ دلڤینیت و چێدبت بشێی هەست ب لڤینان  بکەی. پەڕەیەکا پارێزەر مایەلین دەوری دەماران دروست دکەت. زارۆک ب قەبارەیێ فلفلەکێ یە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-18-ears_4x3.jpg?width=702'
             ],
             [
-                'num' => '19 weeks',
-                'description' => 'Your baby is senses – smell, vision, touch, taste and hearing – are developing and they may be able to hear your voice. Talk, sing or read out loud to them, if you feel like it.',
+                'num' => '19 حەفتیا',
+                'description' => 'هەستێت زارۆکی - بهێن، دیتن،  دەست لێدان، تام و گۆهلێبوون - گەشە دکەن. دشین گوهل تە ببن ئەگەر حەزا تە لێ هەبت.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-19-hair_4x3.jpg?width=702'
             ],
             [
-                'num' => '20 weeks',
-                'description' => 'Your baby can swallow now and their digestive system is producing meconium, the dark, sticky goo that they all pass in their first poop – either in their diaper or in the womb during delivery.',
+                'num' => '20 حەفتیا',
+                'description' => ' سیستەمێ هەرسێ میکۆنیۆم بەرهەم دهێت .  ماددەیەکێ تاریە-.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-20-fetal-movement_4x3.jpg?width=702'
             ],
             [
-                'num' => '21 weeks',
-                'description' => 'Your baby is movements have gone from flutters to full-on kicks and jabs against the walls of your womb. You may start to notice patterns as you become more familiar with their activity. Your baby is the size of a carrot.',
+                'num' => '21 حەفتیا', 
+                'description' => 'لڤینێت زارۆکی لێدان و پەنجە لێدان ل دیواری مالبچویکی.  دەست ب تێبینی کرنێ کەی دگەل چالاکیێن زاروکی .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-21-eyelid_4x3.jpg?width=702'
             ],
             [
-                'num' => '22 weeks',
-                'description' => 'Your baby now looks almost like a miniature newborn. Features such as lips and eyebrows are more distinct, but the pigment that will color their eyes is not present yet. Your baby is the size of a spaghetti squash.',
+                'num' => '22 حەفتیا',
+                 'description' => 'زارۆک  نوکە زۆر ل زاروکەکێ شنوی ژدایکبوو دچیت. سیفەتێن وەک لێڤ و بری زێدەتر جیاوازن، بەس ڕەنگێ چاڤان هێشتا دیار نینە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-22-eyes_4x3.jpg?width=702'
             ],
             [
-                'num' => '23 weeks',
-                'description' => 'Your baby is ears are getting better at picking up sounds. After birth, they may recognize some noises outside the womb that they are hearing inside now. Your baby is the size of a large mango.',
+                'num' => '23 حەفتیا',
+                 'description' => 'گوهێت زاروکی باشتر دبن بو گۆهلیبونا دەنگی.  تبلان دمێژن.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-23-hearing_4x3.jpg?width=702'
             ],
             [
-                'num' => '24 weeks',
-                'description' => 'Your baby cuts a pretty long and lean figure, but chubbier times are coming. Their skin is still thin and translucent, but that will begin to change soon too. Your baby is the size of an ear of corn.',
+                'num' => '24 حەفتیا',
+                'description' => 'زارۆک شێوەیەکێ درێژ و تەنکە. پیستێ وی هێشتا تەنکە و رووناهی تێرا دەرباز دبت بەس  لنێزیک دێ هێتە گهورین.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-24-lung-development_4x3.jpg?width=702'
             ],
             [
-                'num' => '25 weeks',
-                'description' => 'Your baby is wrinkled skin is starting to fill out with baby fat, making them look more like a newborn. Their hair is beginning to come in, and it has color and texture. Your baby is now the same weight as an average rutabaga.',
+                'num' => '25 حەفتیا',
+                'description' => 'پێستێ وی چین چین  دەست ب پڕبوونێ دکەت تژی چەوری دبیت، وەلێ دهێت زێدەتر ل زارۆکەکێ شنوی ژ دایکبوو بچیت. پرچ دەست ب گەشەکرنێ دکەت و ڕەنگ و شێواز هەیە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-25-baby-fat_4x3.jpg?width=702'
             ],
             [
-                'num' => '26 weeks',
-                'description' => 'Your baby is now inhaling and exhaling amniotic fluid, which helps develop their lungs. These breathing movements are good practice for that first breath of air at birth. Your baby is the size of a bunch of scallions.',
+                'num' => '26 حەفتیا',
+                'description' => 'زارۆک نوکە هەناسێ ددەت، ئەڤ لڤینە هەناسەدانە باشن بۆ  هەناسەدانێ لە دەمێ ژ دایکبوونێ.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-26-ear-nerves_4x3.jpg?width=702'
             ],
             [
-                'num' => '27 weeks',
-                'description' => 'This is the last week of your second trimester. Your baby now sleeps and wakes on a regular schedule, and their brain is very active. Their lungs are not fully formed, but they could function outside the womb with medical help.',
+                'num' => '27 حەفتیا',
+                'description' => 'ئەڤە دوماهیک حەفتیا سێ هەیڤێت دووێ. زارۆک نوکە ب شێوازەکێ ڕێک دنڤیت و رادبیت. و مێشکێ زاروکی گەلەک چالاکە. سیهێت وی تەمام نینن.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-27-sleep.jpg?width=702'
             ],
             [
-                'num' => '28 weeks',
-                'description' => 'Your baby is eyesight is developing, which may enable them to sense light filtering in from the outside. They can blink, and their eyelashes have grown in. Your baby is the size of a large eggplant.',
+                'num' => '28 حەفتیا',
+                'description' => ' زاروک گەشێ دکەت  ڕەنگە بشێت روناهی ژ دەرڤە هەست پێ بکەت .و زاروکێ تە ب قەبارەیێ باجانەکا مەزنە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-28-eyelashes_4x3.jpg?width=702'
             ],
             [
-                'num' => '29 weeks',
-                'description' => 'Your baby is muscles and lungs are busy getting ready to function in the outside world, and their head is growing to make room for their developing brain. Your baby is the size of a butternut squash.',
+                'num' => '29 حەفتیا',
+                'description' => 'ماسولکە و سیهێت زاروکێ تە سەرقاڵن ب ئامادەبوون و کارکرنێ کو ژ دەرڤەی مالبچویکی و سەرێ وان مەزن دبیت بۆ ڕێگەپێدانێ ب گەشەکرنا مێشکی.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-29-brain-development_4x3.jpg?width=702'
             ],
             [
-                'num' => '30 weeks',
-                'description' => 'Your baby is surrounded by a pint and a half of amniotic fluid, although there will be less of it as they grow and claim more space inside your uterus. Your baby is the size of a large cabbage.',
+                'num' => '30 حەفتیا',
+                'description' => 'زاروک ب نێزیکی نیڤ لتر ئاڤا منداڵدانێ دەوردراوە، هەرچەندە کێمتر دبیت دەمێ مەزن دبن.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-30-amniotic-fluid_4x3.jpg?width=702'
             ],
             [
-                'num' => '31 weeks',
-                'description' => 'Your baby can now turn their head from side to side. A protective layer of fat is accumulating under their skin, filling out their arms and legs. Your baby is the size of a coconut.',
+                'num' => '31 حەفتیا',
+                'description' => 'زاروک نوکە دشێت سەرێ خو ژ لایەکێ بۆ لایەکێ دی بلڤینیت. چینەکا پارێزەرا چەوری ل ژێر پیستێ وان کومدبن، مل و پێت وی پڕ دکەت. منداڵەکەت .',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-31-taste-buds_4x3.jpg?width=702'
             ],
             [
-                'num' => '32 weeks',
-                'description' => 'You are probably gaining about a pound a week now. Half of that goes straight to your baby, who will gain one-third to half their birth weight in the next seven weeks in preparation for life outside the womb. Your baby is the size of a large jicama.',
+                'num' => '32 حەفتیا',
+                'description' => 'نوکە ب نێزیکی ١ پاوەند د حەفتیەکێ دا کێشا دایکێ زێدەدبت. نیڤی دچت ڕاستەوخۆ بو زاروکی.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-32-fingernails_4x3.jpg?width=702'
             ],
             [
-                'num' => '33 weeks',
-                'description' => 'The bones in your baby is skull are not fused yet. That allows them to shift as their head squeezes through the birth canal. They will not fully fuse until adulthood. Your baby is the size of a pineapple.',
+                'num' => '33 حەفتیا',
+                'description' => 'ئێسکێت کەلەسەرێ زاروکی هێشتا ئێک نەگرتییە. ئەڤە ڕێکێ ددەتێ دەمێ ژ دایک دبن ل رێرەوێ مالبچویکی دا دشێت سەرێ خو بلڤینن . زاروک ب قەبارەیێ ئەنەناسەکێ یە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-33-skull_4x3.jpg?width=702'
             ],
             [
-                'num' => '34 weeks',
-                'description' => 'Your baby is central nervous system is maturing, as are their lungs. Babies born between 34 and 37 weeks who have no other health problems usually do well in the long run.',
+                'num' => '34 حەفتیا',
+                'description' => 'سیستەمێ دەماری  یێ ناڤەندیێ زاروکی گەشە دکەت هەروەسا سیهێت وی. زاروکێت د ناڤبەرا 34 و 37 حەفتی ژدایکدبن چ کێشەیێن تەندروستی نینە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-34-lung-development_4x3.jpg?width=702'
             ],
 
             [
-                'num' => '35 weeks',
-                'description' => 'It is getting snug inside your womb – but you should still feel your baby moving as much as ever. Your baby is kidneys are fully developed, and their liver can process some waste products.',
+                'num' => '35 حەفتیا',
+                 'description' => ' گولچیسکێت زاروکی تەمام گەشە کریە و مێلاک دشێط هندەک ژ پاشماوان راکەت.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-35-fetal-weight_4x3.jpg?width=702'
             ],
             [
-                'num' => '36 weeks',
-                'description' => 'Your baby is gaining about an ounce a day. They are also losing most of their lanugo hair that covered their body, along with the vernix caseosa, a waxy substance that was protecting their skin until now.',
+                'num' => '36 حەفتیا',
+                 'description' => 'زاروک روژانە کێشا خۆ زێدە دکەت. هەروەسا زۆربەیا پرچا لانۆگۆی ژدەست ددەت کو جەستەیێ زاروکی هاتبوو داپۆشین، دگەل ڤێرنیکس کاسێسا، ماددەیەکێ مۆمی کو پیستێ وی پاراستییە تا نوکە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-36-vernix-caseosa_4x3.jpg?width=702'
             ],
             [
-                'num' => '37 weeks',
-                'description' => 'Your due date is very close, and though your baby looks like a newborn, they are not considered full-term until 39 weeks. Over the next two weeks, their lungs and brain will continue to mature.',
+                'num' => '37 حەفتیا',
+                'description' => 'دەمێ چاڤەرێکری  زۆر نێزیکە و هەرچەندە زاروک ل زاروکەکێ شنوی ژ دایک بووی دچیت ، بەس هەتا 39 حەفتیا پێناسە نابیت. ل دوو حەفتیێت داهاتیدا، سیهێت وان و مێشک بەردەوام دبن ژ گەشەکرنێ.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-37-hair-growth_4x3.jpg?width=702'
             ],
             [
-                'num' => '38 weeks',
-                'description' => 'Are you curious about your baby is eye color? Their irises are not fully pigmented at birth, so their eyes could change color up until they are about a year old. Your baby is the size of a leek.',
+                'num' => '38 حەفتیا',
+                'description' => 'حەز دکەی بزانی ڕەنگیێ چاڤێت زاروکی چییە؟ ڕەنگێ چاڤی ل دەمێ ژ دایکبوونێ دا تەمام نینە،   هەتا نێزیکی ١ ساڵی دهێت گهورین. زاروک ب قەبارەیێ پیڤازەکا مەزنە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-38-eye-color_4x3.jpg?width=702'
             ],
 
             [
-                'num' => '39 weeks',
-                'description' => 'Your baby is physical development is complete, but they are still busy putting on fat and growing bigger. Your baby is the size of a mini watermelon.',
+                'num' => '39 حەفتیا',
+                'description' => 'گەشەیا جەستەیێ زاروکی یا تەمام بووی، بەس هێشتا   چەوری زێدەدبیت. زاروک ب قەبارەیێ سێڤەکێ یە .',
+
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-39-mature-lungs_4x3.jpg?width=702'
             ],
             [
-                'num' => '40 weeks',
-                'description' => 'If you are past your due date, you may not be as late as you think, especially if you calculated it solely based on the day of your last period. Sometimes women ovulate later than expected. Your provider will continuously assess your pregnancy to make sure you can safely continue your pregnancy.',
+                'num' => '40 حەفتیا',
+                'description' => 'ئەگەر ل دەمێ چاڤەرێکری تۆ دووگیانی. هندەک جاران ئافرەت ل دەمێ چاڤەرێکری پتر دمینن. پزیشک بەردەوام  دووگیانیا تە پشکنین دکەت بۆ پشتراستبوون ژ هندێ کو بشێ ب سلامەتی دووگیانیا خۆ ببورینی.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-40-soft-spots.jpg?width=702'
             ],
             [
-                'num' => '41 weeks',
-                'description' => 'Your baby is now considered late-term. Going more than two weeks past your due date can put you and your baby at risk for complications, so your provider will probably talk to you about inducing labor. They may perform a non-stress test (NST) to monitor your babyis fetal heart rate and your contractions to make sure your baby is not in any distress.',
+                'num' => '41 حەفتیا',
+                'description' => ' چوونا سەر دوو حەفتاندا ل دەمێ چاڤەرێ دشێت تە و زاروکی بێختە مەترسیێ  ژبەر هندێ پزیشک ڕەنگە دگەل تە بەحسێ دەستپێکردنا زاروکبونێ بکەت  ،بۆ چاڤدێریا  لێدانا دڵێ کۆرپەلەی و پەستانا تە بۆ پشتراستبوون ژ هندێ کو زاروک دبن هیچ فشارەکێ دا  نینە.',
                 'img' => 'https://assets.babycenter.com/ims/2015/01/pregnancy-week-41-amniotic-fluid_4x3.jpg?width=702'
             ],
         ];
@@ -212,4 +213,6 @@ class pregController extends Controller
             'weeksInfo' => $weeksInfo
         ]);
     }
-}
+ }
+
+

@@ -1,15 +1,24 @@
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-    /* Flip icons for RTL */
-    .rtl-flip {
-        transform: scaleX(-1);
-    }
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Flip icons for RTL */
+        .rtl-flip {
+            transform: scaleX(-1);
+        }
+    
+        .nav-gradient {
+            background: linear-gradient(90deg, #ebf8ff 0%, #ebf4ff 100%);
+        }
+    </style>
 
-    .nav-gradient {
-        background: linear-gradient(90deg, #ebf8ff 0%, #ebf4ff 100%);
-    }
-</style>
 
+</head>
 <body class="text-right">
     <nav class="nav-gradient backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-blue-200">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -156,3 +165,4 @@
         });
     </script>
 </body>
+</html>

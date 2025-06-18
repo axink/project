@@ -43,7 +43,7 @@
             دشێت خەوێ باشتر بکەت.
             دروستکرنا ژینگەهەکا ئارام بۆ خەوتنێ، وەکو کەمکرنا ڕۆناهیێ و بەکارهێنانا بالیشتا حەز، دشێت ئارامی پەیدا بکەت.
             چالاکیا جەستەیی ڕێکوپێک لە ڕۆژێدا، وەکو پیاسەیەکا سڤک، دشێت هاریکارییا بکەت بۆ خەوەکا باشتر د شەڤێدا.
-            گرنگیدانا ڤان عاداتان دشێت یارمەتی بدەت بۆ دڵنیابوون ژی شەڤەکا ئارام بۆ هەردوو دایک و زارۆکێ.
+            گرنگیدانا ڤان شێوازان دشێت یارمەتی بدەت بۆ دڵنیابوون ژی شەڤەکا ئارام بۆ هەردووان دایک و زارۆکێ.
             <i class="fas fa-moon text-3xl text-blue-500"></i>
         </p>
     </div>
@@ -197,24 +197,22 @@
             </h2>
             <ul class="space-y-4">
                 <li class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">Find the Right Position</h3>
-                    <p class="mt-2 text-gray-700">Use pillows creatively to prop yourself into a semi-reclined position
-                        if side sleeping becomes too uncomfortable.</p>
+                    <h3 class="text-xl font-semibold">جهەکێ درست هەلبژێرە</h3>
+                    <p class="mt-2 text-gray-700">بالیفکێ ب شێوەیەکێ داهێنەرانە بکاربینە دا درست مفای ژێ وەربگری .
+                    </p>
                 </li>
                 <li class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">Prepare for Night Wakings</h3>
-                    <p class="mt-2 text-gray-700">Accept that your body is adjusting for nighttime feedings. Rest when
-                        you can during the day.</p>
+                    <h3 class="text-xl font-semibold">خۆ امادەبکە کو بشەڤ رابی</h3>
+                    <p class="mt-2 text-gray-700">جەستەیێ تە بخو وەسانە کو بشەڤ رابیت ، دڤێت خۆ بگۆنجینی دگەل</p>
                 </li>
                 <li class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">Prevent Shortness of Breath</h3>
-                    <p class="mt-2 text-gray-700">Sleep propped up with extra pillows if you experience difficulty
-                        breathing.</p>
+                    <h3 class="text-xl font-semibold">ڕێگری ل تەنگەنەفەسی</h3>
+                    <p class="mt-2 text-gray-700">ئەگەر تووشی کێشەیا هەناسەدانێ بووی، بە بالیفکەکێ زێدە بنڤە.
+                    </p>
                 </li>
                 <li class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">Focus on Relaxation</h3>
-                    <p class="mt-2 text-gray-700">Listen to calming music, take a warm bath, or practice mindfulness to
-                        ease into sleep.</p>
+                    <h3 class="text-xl font-semibold">تەرکیز لەسەر ئیسراحەت  </h3>
+                    <p class="mt-2 text-gray-700">گوهێ خۆ بدە موزیکەک ئارامکەر ، سەرشویشتنەکا گەرم بکە.</p>
                 </li>
             </ul>
         </section>
@@ -223,3 +221,4 @@
 </body>
 
 </html>
+

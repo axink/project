@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts.navbar')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mother's Journal | Pregnancy Notes</title>
@@ -14,12 +13,23 @@
         }
         .note-textarea {
             background-image: linear-gradient(#f8fafc 1px, transparent 1px);
-            /* background-size: 100% 28px; */
             line-height: 28px;
         }
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateY(10px); }
+            10% { opacity: 1; transform: translateY(0); }
+            90% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(10px); }
+        }
+        .animate-fadeInOut {
+            animation: fadeInOut 2s ease-in-out forwards;
+        }
     </style>
+    @include('layouts.navbar')
 </head>
 <body class="bg-gradient-to-b from-pink-50 to-rose-50 min-h-screen flex flex-col">
+
+ 
 
     <main class="flex-grow py-12 px-4">
         <div class="max-w-4xl mx-auto">
@@ -27,7 +37,6 @@
             <div class="text-center mb-10">
                 <h1 class="title-font text-4xl font-bold text-rose-700 mb-3">🌸 گەشتا دایکێ</h1>
                 <p class="text-lg text-rose-600 max-w-2xl mx-auto">
-                   
                    
                 </p>
             </div>
@@ -70,11 +79,11 @@
                         <span id="wordCount">0</span> پەیڤ | <span id="charCount">0</span> پیت
                     </div>
                     <div class="flex space-x-3">
-                        <button onclick="exportNote()" class="flex items-center px-4 py-2 bg-white text-rose-600 border border-rose-200 rounded-lg hover:bg-rose-50 transition">
+                        <button onclick="saveNote()" class="flex items-center px-4 py-2 bg-rose-600 text-white border border-rose-600 rounded-lg hover:bg-rose-700 transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            Export
+                            Save
                         </button>
                         <button onclick="clearNote()" class="flex items-center px-4 py-2 bg-white text-rose-600 border border-rose-200 rounded-lg hover:bg-rose-50 transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,31 +95,11 @@
                 </div>
             </div>
 
-            <!-- Tips Section -->
-            <div class="mt-10 bg-white bg-opacity-70 rounded-xl p-6 border border-rose-100">
-                <h3 class="title-font text-xl font-semibold text-rose-700 mb-3">✏️ Journaling Tips for Expecting Mothers</h3>
-                <ul class="space-y-2 text-gray-600">
-                    <li class="flex items-start">
-                        <span class="text-rose-500 mr-2">•</span> Write about your physical changes and how you feel about them
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-rose-500 mr-2">•</span> Note down questions for your next doctor's appointment
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-rose-500 mr-2">•</span> Record special moments like first kicks or cravings
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-rose-500 mr-2">•</span> Write letters to your unborn baby
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-rose-500 mr-2">•</span> Track symptoms or patterns you notice
-                    </li>
-                </ul>
-            </div>
+           
         </div>
     </main>
 
-    @include('layouts.footer')
+  @include('layouts.footer')
 
     <script>
         // Initialize
@@ -150,9 +139,9 @@
             const note = document.getElementById('note').value;
             localStorage.setItem('motherJournal', note);
             localStorage.setItem('motherJournalTimestamp', Date.now());
-            document.getElementById('lastSaved').textContent = 'Last saved: ' + new Date().toLocaleTimeString();
+            document.getElementById('lastSaved').textContent = 'Saved at: ' + new Date().toLocaleTimeString();
             
-            // Show subtle saved indicator
+            // Show saved indicator
             const indicator = document.createElement('div');
             indicator.textContent = '✓ Saved';
             indicator.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-3 py-2 rounded-lg shadow-lg animate-fadeInOut';
@@ -160,6 +149,8 @@
             setTimeout(() => {
                 indicator.remove();
             }, 2000);
+            
+            updateCounters();
         }
 
         // Clear note
@@ -171,24 +162,6 @@
                 document.getElementById('lastSaved').textContent = 'Note cleared';
                 updateCounters();
             }
-        }
-
-        // Export note
-        function exportNote() {
-            const note = document.getElementById('note').value;
-            if (!note.trim()) {
-                alert("There's no content to export.");
-                return;
-            }
-            
-            const blob = new Blob([note], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `Pregnancy-Journal-${new Date().toISOString().split('T')[0]}.txt`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
         }
 
         // Update word and character counters
@@ -218,6 +191,7 @@
             textarea.value = textarea.value.substring(0, start) + before + selectedText + after + textarea.value.substring(end);
             textarea.focus();
             textarea.setSelectionRange(start + before.length, end + before.length);
+            saveNote(); // Auto-save after formatting
         }
 
         // Insert emoji at cursor position
@@ -229,6 +203,7 @@
                 textarea.value = textarea.value.substring(0, start) + emoji + textarea.value.substring(textarea.selectionEnd);
                 textarea.focus();
                 textarea.setSelectionRange(start + emoji.length, start + emoji.length);
+                saveNote(); // Auto-save after inserting emoji
             }
         }
     </script>
