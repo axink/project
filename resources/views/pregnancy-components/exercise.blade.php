@@ -63,16 +63,15 @@
 
 <body class="bg-gray-50 text-gray-800">
 
-    <br>
-        <a href="{{ route('pregnancystage') }}" class="back-button">
-            <button class="bg-blue-500 text-white px-6 py-3 m-5 rounded-full shadow-lg hover:shadow-xl transition-all hover:bg-blue-400 flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-                <span class="mr-2">زڤرین</span>
-            </button>
-        </a>
+    <a href="{{ route('pregnancystage') }}" style="position: sticky; top: 2rem; left: 1rem; z-index: 10000;">
+        <button
+            class="bg-blue-500 text-white px-6 py-3 m-5 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:bg-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+    </a>
     <br>
 
     <!-- Main Container -->
@@ -377,7 +376,7 @@
                 class="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 rounded-xl shadow-lg p-6 transform transition-transform hover:scale-105">
                 <h3 class="text-xl font-semibold text-white">راهێنانێت گران و ب مەترسی نەکە</h3>
                 <p class="text-sm text-white mt-2">
-                    
+
                 </p>
             </div>
 

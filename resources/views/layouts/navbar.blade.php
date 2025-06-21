@@ -11,7 +11,7 @@
         .rtl-flip {
             transform: scaleX(-1);
         }
-    
+
         .nav-gradient {
             background: linear-gradient(90deg, #ebf8ff 0%, #ebf4ff 100%);
         }
@@ -44,14 +44,7 @@
 
                 <!-- Desktop Menu (right side) -->
                 <div class="hidden sm:flex sm:space-x-4 sm:space-x-reverse items-center ml-4"> <!-- ml-4 for spacing -->
-                    <a href="{{ route('home') }}"
-                        class="rounded-lg bg-pink-200 px-4 py-2 text-sm font-semibold text-pink-900 shadow-sm hover:bg-pink-300 transition flex items-center">
-                        <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                        </svg>
-                        دەستپێک
-                    </a>
+
                     <a href="{{ route('pregnancystage') }}"
                         class="rounded-lg px-4 py-2 text-sm font-medium text-pink-800 hover:bg-pink-100 transition flex items-center">
                         <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,6 +68,14 @@
                                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                         نڤیسینا تێبینیان
+                    </a>
+                    <a href="{{ route('home') }}"
+                        class="rounded-lg bg-pink-200 px-4 py-2 text-sm font-semibold text-pink-900 shadow-sm hover:bg-pink-300 transition flex items-center">
+                        <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        دەستپێک
                     </a>
 
 
