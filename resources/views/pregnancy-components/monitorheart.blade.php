@@ -374,8 +374,7 @@
                         </div>
                         <div class="bg-pink-50 rounded-lg p-4">
                             <h4 class="font-medium text-pink-800">حەفتییا ٥-٦</h4>
-                            <p class="text-gray-600 text-sm mt-1">دڵ دەست بە پەرەسەندن دەکات، بەڵام هێشتا ناتوانرێت
-                                بیستری</p>
+                            <p class="text-gray-600 text-sm mt-1">دل دەست ب پەرەسەندنێ دکەت بەلێ هێشتا نەشێین گوهلێبین</p>
                         </div>
                     </div>
 
