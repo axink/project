@@ -15,6 +15,9 @@
         .nav-gradient {
             background: linear-gradient(90deg, #ebf8ff 0%, #ebf4ff 100%);
         }
+
+
+        
     </style>
 
 
@@ -45,22 +48,8 @@
                 <!-- Desktop Menu (right side) -->
                 <div class="hidden sm:flex sm:space-x-4 sm:space-x-reverse items-center ml-4"> <!-- ml-4 for spacing -->
 
-                    <a href="{{ route('pregnancystage') }}"
-                        class="rounded-lg px-4 py-2 text-sm font-medium text-pink-800 hover:bg-pink-100 transition flex items-center">
-                        <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
-                        گەشتا دۆگیانیێ
-                    </a>
-                    <a href="{{ route('babynames') }}"
-                        class="rounded-lg px-4 py-2 text-sm font-medium text-pink-800 hover:bg-pink-100 transition flex items-center">
-                        <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        ناڤێن زارۆکان
-                    </a>
+                  
+                   
                     <a href="{{ route('mother-notes') }}"
                         class="rounded-lg px-4 py-2 text-sm font-medium text-pink-800 hover:bg-pink-100 transition flex items-center">
                         <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,6 +58,23 @@
                         </svg>
                         نڤیسینا تێبینیان
                     </a>
+                    <a href="{{ route('babynames') }}"
+                    class="rounded-lg px-4 py-2 text-sm font-medium text-pink-800 hover:bg-pink-100 transition flex items-center">
+                    <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    ناڤێن زارۆکان
+                    </a>
+                    <a href="{{ route('pregnancystage') }}"
+                    class="rounded-lg px-4 py-2 text-sm font-medium text-pink-800 hover:bg-pink-100 transition flex items-center">
+                    <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    گەشتا دۆگیانیێ
+                    </a>
+
                     <a href="{{ route('home') }}"
                         class="rounded-lg bg-pink-200 px-4 py-2 text-sm font-semibold text-pink-900 shadow-sm hover:bg-pink-300 transition flex items-center">
                         <svg class="w-4 h-4 ml-1 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
